@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer-AI Career Navigator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Resume Analyzer</h1>
+        <p>upload your resume and let AI analyze your career profile</p>
+        <form id="resumeform">
+        <input type="file" id="resumefile" accept=".pdf" required>
+        <br><br>
+        <input type="submit" value="Analyze Resume" >
+        </form>
+        <p>Supported Formats : PDF </p>
+        <p id="message"></p>
+        <h2>Extracted Resume Text.</h2>
+        <div id="resumetext"></div>
+        <h2>Detected Skills.</h2>
+        <div id="skills"></div>
+        <h2>Skill Gap Analysis</h2>
+        <div id="skillgap"></div>
+        <h2>Recommended Career Paths</h2>
+        <div id="careers"></div>
+        <h2>Career Roadmap</h2>
+        <div id="roadmap"></div>
+        <h2>Resume Score</h2>
+        <div id="score"></div>
+        <p>
+            <a href="dashboard.html">Back to Dashboard</a>
+        </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

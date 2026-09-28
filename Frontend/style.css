@@ -1,0 +1,1161 @@
+/* =========================================================
+   GLOBAL STYLES
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+}
+
+
+/* =========================================================
+   GENERAL CONTAINER
+   ========================================================= */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-size: 42px;
+
+    color: #2563eb;
+}
+
+h2 {
+    margin-bottom: 20px;
+
+    color: #1e293b;
+
+    font-size: 26px;
+}
+
+h3 {
+    color: #334155;
+}
+
+
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+
+p {
+    font-size: 17px;
+
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   HORIZONTAL LINE
+   ========================================================= */
+
+hr {
+    margin: 35px 0;
+
+    border: none;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+button,
+input[type="submit"] {
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 25px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+/* Links used as buttons */
+
+.btn {
+    display: inline-block;
+
+    width: fit-content;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 20px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    border: none;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+
+    color: white;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   FILE INPUT
+   ========================================================= */
+
+input[type="file"] {
+    width: 100%;
+    max-width: 450px;
+
+    padding: 12px;
+
+    font-size: 15px;
+
+    border: 2px dashed #cbd5e1;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    border-color: #2563eb;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* =========================================================
+   RESUME TEXT
+   ========================================================= */
+
+#resumetext {
+    width: 100%;
+    max-width: 850px;
+
+    max-height: 350px;
+
+    overflow-y: auto;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    line-height: 1.7;
+
+    white-space: pre-wrap;
+
+    color: #475569;
+}
+
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+#skills {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    line-height: 1.8;
+
+    color: #1d4ed8;
+}
+
+
+/* =========================================================
+   SCORE
+   ========================================================= */
+
+#score {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    font-size: 34px;
+
+    font-weight: bold;
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+
+/* =========================================================
+   SKILL GAP
+   ========================================================= */
+
+#skillgap {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: #fff7ed;
+
+    border: 1px solid #fed7aa;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    line-height: 1.8;
+}
+
+#skillgap h3 {
+    color: #c2410c;
+}
+
+
+/* =========================================================
+   CAREER RESULTS
+   ========================================================= */
+
+#careers {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    line-height: 1.8;
+}
+
+#careers p {
+    margin: 0;
+
+    padding: 14px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    color: #334155;
+}
+
+#careers p:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   CAREER ROADMAP
+   ========================================================= */
+
+#roadmap {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    background: #f0fdf4;
+
+    border: 1px solid #bbf7d0;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    line-height: 1.8;
+}
+
+#roadmap p {
+    margin: 10px 0;
+
+    color: #166534;
+}
+
+
+/* =========================================================
+   OLD DASHBOARD ELEMENTS
+   ========================================================= */
+
+#topcareer,
+#resumescore,
+#detectedSkills {
+    padding: 18px;
+
+    margin: 12px 0;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   CAREER PATH RESULTS
+   ========================================================= */
+
+#careerpaths {
+    width: 100%;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    line-height: 1.8;
+}
+
+#careerpaths h3 {
+    margin-top: 0;
+
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   DASHBOARD
+   ========================================================= */
+
+.dashboard-container {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 50px 0 70px;
+}
+
+
+/* Dashboard Header */
+
+.dashboard-header {
+    margin-bottom: 45px;
+}
+
+.dashboard-label {
+    margin: 0 0 8px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #2563eb;
+}
+
+.dashboard-header h1 {
+    margin: 0 0 10px;
+
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    color: #1e293b;
+}
+
+.dashboard-subtitle {
+    margin: 0;
+
+    font-size: 17px;
+
+    color: #64748b;
+}
+
+
+/* Dashboard Section Heading */
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    margin: 0 0 6px;
+
+    font-size: 26px;
+}
+
+.section-heading p {
+    margin: 0;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   DASHBOARD OVERVIEW GRID
+   ========================================================= */
+
+.overview-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* Overview Cards */
+
+.overview-card {
+    min-width: 0;
+
+    min-height: 190px;
+
+    padding: 26px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.overview-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(15, 23, 42, 0.09);
+}
+
+
+/* Card Icons */
+
+.card-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 10px;
+
+    background: #eff6ff;
+
+    font-size: 20px;
+}
+
+
+/* Card Titles */
+
+.overview-card h3 {
+    margin: 0 0 14px;
+
+    font-size: 17px;
+
+    color: #334155;
+}
+
+
+/* Career Value */
+
+.card-value {
+    margin: 0;
+
+    color: #1e293b;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+}
+
+
+/* Match Badge */
+
+.match-badge {
+    display: inline-block;
+
+    margin-left: 8px;
+
+    padding: 5px 10px;
+
+    border-radius: 999px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   RESUME SCORE
+   ========================================================= */
+
+.score-value {
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 5px;
+
+    margin: 5px 0 10px;
+
+    color: #2563eb;
+
+    font-size: 42px;
+
+    font-weight: 700;
+}
+
+.score-total {
+    color: #64748b;
+
+    font-size: 18px;
+
+    font-weight: 500;
+}
+
+.score-card p {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   DETECTED SKILLS
+   ========================================================= */
+
+.skills-value {
+    margin: 0;
+
+    max-height: 90px;
+
+    overflow-y: auto;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #475569;
+}
+
+
+/* =========================================================
+   QUICK ACTIONS
+   ========================================================= */
+
+.quick-actions {
+    margin-top: 55px;
+}
+
+
+.action-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* Action Cards */
+
+.action-card {
+    min-width: 0;
+
+    min-height: 235px;
+
+    padding: 26px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.05);
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.action-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+
+/* Action Icons */
+
+.action-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+
+    background: #f1f5f9;
+
+    font-size: 25px;
+}
+
+
+.action-card h3 {
+    margin: 0 0 10px;
+
+    font-size: 18px;
+
+    color: #1e293b;
+}
+
+.action-card p {
+    margin: 0 0 20px;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+.action-card .btn {
+    margin-top: auto;
+}
+
+
+/* =========================================================
+   DASHBOARD RESULTS
+   ========================================================= */
+
+.results-section {
+    margin-top: 45px;
+}
+
+.results-section > div {
+    margin-bottom: 25px;
+}
+
+
+.results-header {
+    margin-bottom: 15px;
+}
+
+.results-header h3 {
+    margin-bottom: 5px;
+}
+
+.results-header p {
+    margin-top: 0;
+}
+
+
+/* Career Match */
+
+.career-match {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    margin-bottom: 12px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+}
+
+.career-match h4 {
+    margin: 0 0 5px;
+
+    color: #1e293b;
+
+    font-size: 17px;
+}
+
+.career-match p {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+
+/* Skill Tags */
+
+.skill-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.skill-tag {
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    border-radius: 999px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border: 1px solid #bfdbfe;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* Success Result */
+
+.success-result {
+    padding: 22px;
+
+    background: #f0fdf4;
+
+    border: 1px solid #bbf7d0;
+
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   AUTH PAGES
+   ========================================================= */
+
+.auth-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    margin-bottom: 16px;
+
+    text-align: left;
+}
+
+.form-group input {
+    padding: 10px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .dashboard-container {
+        width: 92%;
+    }
+
+    .overview-grid,
+    .action-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+
+        margin: 20px auto;
+
+        padding: 25px 18px;
+
+        border-radius: 12px;
+    }
+
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+
+    button,
+    input[type="submit"] {
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+
+    /* Dashboard */
+
+    .dashboard-container {
+        width: 92%;
+
+        padding:
+            30px 0 50px;
+    }
+
+
+    .dashboard-header {
+        margin-bottom: 35px;
+    }
+
+
+    .dashboard-header h1 {
+        font-size: 32px;
+    }
+
+
+    .dashboard-subtitle {
+        font-size: 15px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 23px;
+    }
+
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+
+    .overview-grid,
+    .action-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    .overview-card {
+        min-height: auto;
+
+        padding: 22px;
+    }
+
+
+    .score-value {
+        font-size: 36px;
+    }
+
+
+    .action-card {
+        min-height: auto;
+
+        padding: 22px;
+    }
+
+
+    .action-card .btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .career-match {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+
+    .match-badge {
+        margin-left: 0;
+    }
+
+
+    #resumetext,
+    #skills,
+    #skillgap,
+    #careers,
+    #roadmap,
+    #score {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .dashboard-container {
+        width: 94%;
+    }
+
+
+    .dashboard-header h1 {
+        font-size: 28px;
+    }
+
+
+    .overview-card,
+    .action-card {
+        padding: 18px;
+    }
+
+
+    .score-value {
+        font-size: 32px;
+    }
+
+}
+/* Hide dashboard result sections until they contain results */
+
+#careerpaths:empty,
+#skillgap:empty {
+    display: none;
+}
+/* =========================================================
+   RESUME ANALYZER - HIDE EMPTY RESULTS
+   ========================================================= */
+
+#resumetext:empty,
+#skills:empty,
+#skillgap:empty,
+#careers:empty,
+#roadmap:empty,
+#score:empty {
+    display: none;
+}
+/* Hide headings when their result containers are empty */
+
+h2:has(+ #resumetext:empty),
+h2:has(+ #skills:empty),
+h2:has(+ #skillgap:empty),
+h2:has(+ #careers:empty),
+h2:has(+ #roadmap:empty),
+h2:has(+ #score:empty) {
+    display: none;
+}
+/* ==========================================
+   DASHBOARD WELCOME HEADER
+   ========================================== */
+
+.dashboard-header {
+    margin-bottom: 45px;
+}
+
+.dashboard-header h1 {
+    margin-bottom: 8px;
+    font-size: 38px;
+    font-weight: 700;
+    color: black;
+}
+
+.dashboard-header h2 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Gill Sans", sans-serif;
+    color: #2563eb;
+}
+
+.dashboard-header .dashboard-subtitle {
+    margin: 0;
+    font-size: 16px;
+    color: #64748b;
+}

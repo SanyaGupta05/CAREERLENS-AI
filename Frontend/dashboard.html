@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - AI Career Navigator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="dashboard-container">
+
+        <!-- Dashboard Header -->
+        <header class="dashboard-header">
+            <div>
+
+                <h1>AI Career Navigator</h1>
+                <h2 id="welcomeUser"></h2>
+                <p class="dashboard-subtitle">
+                    Welcome to your personalized career dashboard.
+                </p>
+            </div>
+        </header>
+
+
+        <!-- Career Overview -->
+        <section class="overview">
+
+            <div class="section-heading">
+                <h2>Your Career Overview</h2>
+
+                <p>
+                    Understand your resume, skills, and recommended career direction.
+                </p>
+            </div>
+
+
+            <div class="overview-grid">
+
+                <!-- Top Career -->
+                <div class="overview-card career-card">
+
+                    <div class="card-icon">
+                        🎯
+                    </div>
+
+                    <h3>Top Recommended Career</h3>
+
+                    <p id="topcareer" class="card-value">
+                        No resume analyzed yet.
+                    </p>
+
+                </div>
+
+
+                <!-- Resume Score -->
+                <div class="overview-card score-card">
+
+                    <div class="card-icon">
+                        📊
+                    </div>
+
+                    <h3>Resume Score</h3>
+
+                    <div class="score-value">
+                        <span id="resumescore">--</span>
+                        <span class="score-total">/100</span>
+                    </div>
+
+                    <p>
+                        Your overall resume quality score.
+                    </p>
+
+                </div>
+
+
+                <!-- Skills -->
+                <div class="overview-card skills-card">
+
+                    <div class="card-icon">
+                        💡
+                    </div>
+
+                    <h3>Detected Skills</h3>
+
+                    <p id="detectedSkills" class="skills-value">
+                        No skills detected yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+
+            <div class="section-heading">
+                <h2>Quick Actions</h2>
+
+                <p>
+                    Continue exploring your career profile.
+                </p>
+            </div>
+
+
+            <div class="action-grid">
+
+                <!-- Analyze Resume -->
+                <div class="action-card">
+
+                    <div class="action-icon">
+                        📄
+                    </div>
+
+                    <h3>Analyze My Resume</h3>
+
+                    <p>
+                        Upload your resume and get a detailed analysis of your skills and resume quality.
+                    </p>
+
+                    <a href="resume.html" class="btn">
+                        Analyze Resume
+                    </a>
+
+                </div>
+
+
+                <!-- Career Paths -->
+                <div class="action-card">
+
+                    <div class="action-icon">
+                        🚀
+                    </div>
+
+                    <h3>Explore Career Paths</h3>
+
+                    <p>
+                        Discover career paths that match your detected skills.
+                    </p>
+
+                    <button
+                        class="btn"
+                        onclick="showCareerPaths()">
+                        Explore Careers
+                    </button>
+
+                </div>
+
+
+                <!-- Skill Gaps -->
+                <div class="action-card">
+
+                    <div class="action-icon">
+                        📚
+                    </div>
+
+                    <h3>View Skill Gaps</h3>
+
+                    <p>
+                        Find the skills you can develop for your recommended career.
+                    </p>
+
+                    <button
+                        class="btn"
+                        onclick="showSkillGaps()">
+                        View Skill Gaps
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Dynamic Results -->
+        <section class="results-section">
+
+            <div id="careerpaths"></div>
+
+            <div id="skillgap"></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
