@@ -65,10 +65,7 @@ if (welcomeUser) {
 
     try {
 
-        const response = await fetch(
-            "http://localhost:8080/api/resume/" +
-            encodeURIComponent(loggedInUser.email)
-        );
+        const response = await fetch(`https://careerlens-ai-csrz.onrender.com/api/resume/${email}`)
 
         if (response.ok) {
 

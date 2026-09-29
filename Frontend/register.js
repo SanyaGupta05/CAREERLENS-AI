@@ -12,7 +12,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
     }
 
     try {
-        const response = await fetch("http://localhost:8080/api/auth/register", {
+        const response = await fetch("https://careerlens-ai-csrz.onrender.com/api/auth/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

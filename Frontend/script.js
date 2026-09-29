@@ -69,7 +69,7 @@ if (!loggedInUser) {
 }
 
 const response = await fetch(
-    "http://localhost:8080/api/resume",
+    "https://careerlens-ai-csrz.onrender.com/api/resume",
     {
         method: "POST",
 
@@ -322,7 +322,7 @@ localStorage.setItem(
 
 // Save the recommended career to the database
 if (loggedInUser) {
-    await fetch("http://localhost:8080/api/resume", {
+    await fetch("https://careerlens-ai-csrz.onrender.com/api/resume", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
