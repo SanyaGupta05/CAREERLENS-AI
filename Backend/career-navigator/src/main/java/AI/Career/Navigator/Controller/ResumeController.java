@@ -15,8 +15,10 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://127.0.0.1:5500")
-public class ResumeController {
+@CrossOrigin(origins = {
+    "http://127.0.0.1:5500",
+    "https://careerlens-ai1.onrender.com"
+})public class ResumeController {
 
     private final ResumeAnalyzerService analyzerService;
     private final ResumeAnalysisService resumeAnalysisService;
