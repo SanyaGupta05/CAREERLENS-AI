@@ -55,6 +55,7 @@ async function loadUserAnalysis() {
         window.location.href = "login.html";
         return;
     }
+    const email = loggedInUser.email;
     const welcomeUser =
     document.getElementById("welcomeUser");
 
